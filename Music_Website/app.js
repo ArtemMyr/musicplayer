@@ -520,7 +520,6 @@ music.addEventListener('ended', ()=>{
         case 'repeat':
             repeat_music();
             break;
-    
         case 'next':
             next_music();
             break;

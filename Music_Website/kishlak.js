@@ -299,7 +299,7 @@ next.addEventListener('click', ()=>{
     if (index > Array.from(document.getElementsByClassName('songItem')).length) {
         index = 1;
     }
-    music.src = `audio/${index}.mp3`;
+    music.src = `audio/kishlak/${index}.mp3`;
     poster_master_play.src = `${songs[index-1].poster}`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
@@ -386,12 +386,12 @@ const next_music = () =>{
     } else {
         index++;
     }
-    music.src = `audio/${index}.mp3`;
+    music.src = `audio/kishlak/${index}.mp3`;
     poster_master_play.src = `${songs[index-1].poster}`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
-    download_music.href = `audio/${index}.mp3`;
+    download_music.href = `audio/kishlak/${index}.mp3`;
 
     let songTitles = songs.filter((els) =>{
         return els.id == index;
@@ -413,12 +413,12 @@ const next_music = () =>{
 
 const repeat_music = () =>{
     index;
-    music.src = `audio/${index}.mp3`;
+    music.src = `audio/kishlak/${index}.mp3`;
     poster_master_play.src = `${songs[index-1].poster}`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
-    download_music.href = `audio/${index}.mp3`;
+    download_music.href = `audio/kishlak/${index}.mp3`;
 
     let songTitles = songs.filter((els) =>{
         return els.id == index;
@@ -444,12 +444,12 @@ const random_music = () =>{
     } else {
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src = `audio/${index}.mp3`;
+    music.src = `audio/kishlak/${index}.mp3`;
     poster_master_play.src = `${songs[index-1].poster}`;
     music.play();
     masterPlay.classList.remove('bi-play-fill');
     masterPlay.classList.add('bi-pause-fill');
-    download_music.href = `audio/${index}.mp3`;
+    download_music.href = `audio/kishlak/${index}.mp3`;
 
     let songTitles = songs.filter((els) =>{
         return els.id == index;
